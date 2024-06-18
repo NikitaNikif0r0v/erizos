@@ -1,0 +1,56 @@
+.folder {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    gap: 10px;
+}
+
+.collapseIcon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    .icon {
+        position: relative;
+        height: 16px;
+        width: 16px;
+        background-color: #ffffff;
+        border-radius: 5px;
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 6px;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &.collapsed {
+           
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

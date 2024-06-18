@@ -1,0 +1,14 @@
+.file {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    gap: 10px;
+
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+}
